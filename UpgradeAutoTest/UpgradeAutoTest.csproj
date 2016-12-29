@@ -34,6 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -43,12 +44,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Comm\CommHelper.cs" />
+    <Compile Include="Comm\ProcessUpgrade.cs" />
+    <Compile Include="Model\QSWPackage.cs" />
+    <Compile Include="Model\QSWResult.cs" />
+    <Compile Include="Model\SSWPackage.cs" />
+    <Compile Include="Model\SWCommen.cs" />
+    <Compile Include="Model\UpgradeRepository.cs" />
+    <Compile Include="Model\USWPackage.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utility\ByteHelper.cs" />
+    <Compile Include="Utility\GetUpgrade.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
